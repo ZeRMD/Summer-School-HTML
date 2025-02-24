@@ -7,40 +7,30 @@ function getYear() {
 
 getYear();
 
-
-// client section owl carousel
-$(".client_owl-carousel").owlCarousel({
-    loop: true,
-    margin: 20,
-    dots: false,
-    nav: true,
-    navText: [],
-    autoplay: true,
-    autoplayHoverPause: true,
-    navText: [
-        '<i class="fa fa-angle-left" aria-hidden="true"></i>',
-        '<i class="fa fa-angle-right" aria-hidden="true"></i>'
-    ],
-    responsive: {
-        0: {
-            items: 1
-        },
-        600: {
-            items: 2
-        },
-        1000: {
-            items: 2
+// Section highlight on scroll
+document.addEventListener("DOMContentLoaded", function () {
+    const sections = document.querySelectorAll("section"); // Select all sections
+    const navLinks = document.querySelectorAll(".nav-link"); // Select all nav links
+  
+    function changeActiveLink() {
+      let scrollPos = window.scrollY + 100; // Adjust scroll offset
+  
+      sections.forEach((section) => {
+        if (
+          scrollPos >= section.offsetTop &&
+          scrollPos < section.offsetTop + section.offsetHeight
+        ) {
+          let id = section.getAttribute("id");
+          navLinks.forEach((link) => {
+            link.classList.remove("active-link"); // Remove highlight from all
+            if (link.getAttribute("href") === `#${id}`) {
+              link.classList.add("active-link"); // Highlight active section
+            }
+          });
         }
+      });
     }
-});
-
-
-
-/** google_map js **/
-function myMap() {
-    var mapProp = {
-        center: new google.maps.LatLng(40.712775, -74.005973),
-        zoom: 18,
-    };
-    var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
-}
+  
+    window.addEventListener("scroll", changeActiveLink); // Run on scroll
+    changeActiveLink(); // Run on page load
+  });
