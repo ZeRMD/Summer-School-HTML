@@ -434,7 +434,7 @@ a:focus {
 /* *************************************************** */
 
 .application_section {
-  background-color: #000000;
+  background-color: #5a5a5a;
   color: #ffffff;
   display: flex;
   flex-direction: column;
@@ -456,12 +456,12 @@ a:focus {
   margin-bottom: 30px; /* Space between title and paragraph */
   font-weight: bold;
   text-align: center;
-  color: #0065BD;
+  color: #ffffff;
 }
 
 .application_section .application_content p {
   text-align: center;
-  color: #646464;
+  color: #afafaf;
   margin-top: 20px;
 }
 
@@ -534,7 +534,7 @@ a:focus {
 
 .goal_section {
   margin-top: 70px;  /* Adds space above the section */
-  margin-bottom: 170px; /* Adds space below the section */
+  margin-bottom: 15px; /* Adds space below the section */
 }
 
 .goal_section h2{
@@ -750,7 +750,7 @@ a:focus {
 
 .team-section {
   padding: 50px 20px;
-  background-color: #f8f8f9;
+  background-color: #ffffff;
   display: inline;
   float: left;
   width: 100%;
@@ -759,6 +759,11 @@ a:focus {
 
 .team-section h2 {
   margin-bottom: 20px;
+}
+
+.team-section h2 span{
+  margin-bottom: 20px;
+  color: #0065BD;
 }
 
 .team-section .team-container {
@@ -815,7 +820,7 @@ a:focus {
 .sponsors_section {
   text-align: justify;
   box-sizing: border-box;
-  background-color: #f8f8f9;
+  background-color: #ffffff;
   display: inline;
   float: left;
   width: 100%;
@@ -824,7 +829,6 @@ a:focus {
 .sponsors_section .sponsors_section_area {
   display: inline;
   float: left;
-  padding: 100px 0;
   width: 100%;
 }
 
@@ -852,6 +856,9 @@ a:focus {
 .sponsors_section .sponsors_section_area .sponsors_section_content .row .sponsors_section_single{
   display: inline;
   float: left;
+  text-align: center;
+  align-items: center;
+  align-content: center;
   margin-top: 10px;
   margin-bottom: 15px;
   width: 100%;
