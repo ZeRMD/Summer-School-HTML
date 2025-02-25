@@ -9,28 +9,30 @@ getYear();
 
 // Section highlight on scroll
 document.addEventListener("DOMContentLoaded", function () {
-    const sections = document.querySelectorAll("section"); // Select all sections
-    const navLinks = document.querySelectorAll(".nav-link"); // Select all nav links
-  
-    function changeActiveLink() {
-      let scrollPos = window.scrollY + 100; // Adjust scroll offset
-  
-      sections.forEach((section) => {
-        if (
-          scrollPos >= section.offsetTop &&
-          scrollPos < section.offsetTop + section.offsetHeight
-        ) {
-          let id = section.getAttribute("id");
-          navLinks.forEach((link) => {
-            link.classList.remove("active-link"); // Remove highlight from all
-            if (link.getAttribute("href") === `#${id}`) {
-              link.classList.add("active-link"); // Highlight active section
+    const sections = document.querySelectorAll("section");
+    const navLinks = document.querySelectorAll("nav ul li a");
+    
+    function changeActiveNav() {
+        let scrollPosition = window.scrollY;
+        
+        sections.forEach((section) => {
+            const sectionTop = section.offsetTop - 250; // Offset for better accuracy
+            const sectionHeight = section.clientHeight;
+            const sectionId = section.getAttribute("id");
+            
+            if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                navLinks.forEach((link) => {
+                    link.style.color = ""; // Reset color for all links
+                });
+                
+                let activeLink = document.querySelector(`nav ul li a[href="#${sectionId}"]`);
+                if (activeLink) {
+                    activeLink.style.color = "#ffcc00"; // Highlight active section
+                }
             }
-          });
-        }
-      });
+        });
     }
-  
-    window.addEventListener("scroll", changeActiveLink); // Run on scroll
-    changeActiveLink(); // Run on page load
-  });
+    
+    window.addEventListener("scroll", changeActiveNav);
+    changeActiveNav(); // Run on load
+});
