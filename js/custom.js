@@ -32,7 +32,25 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     }
+
+    function closeMenuOnItemClick() {
+        const navbarToggle = document.querySelector('.navbar-toggler');
+        const navbarCollapse = document.querySelector('#navbarNav');
+
+        if (navbarToggle && navbarCollapse) {
+            const menuLinks = document.querySelectorAll('.navbar-nav .nav-link');
+
+            menuLinks.forEach((link) => {
+                link.addEventListener('click', function () {
+                    if (window.innerWidth < 992) {
+                        navbarCollapse.classList.remove('show');
+                    }
+                });
+            });
+        }
+    }
     
     window.addEventListener("scroll", changeActiveNav);
     changeActiveNav(); // Run on load
+    closeMenuOnItemClick();
 });

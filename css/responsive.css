@@ -7,10 +7,6 @@
     min-height: auto;
   }
 
-  .hero_area {
-    background: linear-gradient(130deg, #231a6f, #0f054c);
-  }
-
   .hero_area .hero_bg_box {
     display: none;
   }
@@ -30,7 +26,9 @@
     margin: 5px 0;
   }
 
-
+  .container {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -38,6 +36,33 @@
     margin-bottom: 45px;
   }
 
+  .team-section {
+    padding: 50px 0;
+  }
+
+  .goal_section-left {
+    padding-right: 0;
+  }
+
+  .goal_section-right {
+    padding-left: 0;
+  }
+
+  .mu-about-area {
+    .row {
+      row-gap: 32px;
+    }
+  }
+
+  .hero_area {
+    .img-box {
+      max-width: 100%;
+    }
+  }
+
+  .navbar-brand {
+    display: none;
+  }
 }
 
 @media (max-width: 576px) {

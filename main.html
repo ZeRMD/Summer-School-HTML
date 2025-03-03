@@ -43,13 +43,17 @@
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top d-flex justify-content-between">
             
             <!-- Centered logo -->
-            <div class="mx-auto">
+            <div class="d-flex align-items-center">
                 <img src="images/logos/Logo Summer School.png" alt="Logo" class="navbar-logo">
+                <a class="navbar-brand" href="#">RICS Summer School</a>
             </div>
 
-            <!-- Left-aligned brand -->
-            <a class="navbar-brand" href="#">RICS Summer School</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
 
+            <!-- Left-aligned brand -->
+            
             <!-- Right-aligned navbar items -->
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
@@ -80,12 +84,12 @@
   <!-- hero section -->
 
   <section class="hero_area" id="hero">
-    <div class="img-box">
+    <div class="img-box flex-column">
       <img src="images/logos/Logo Summer School Colour.png" alt="Robitcs Week">
-    </div>
-    <div class="hero_content">
-      <h1>Bem vindo à Summer School!</h1>
-      <a href="#goal_section" class="btn">Get Started</a>
+      <div class="hero_content">
+        <h1>Bem vindo à Summer School!</h1>
+        <a href="#goal_section" class="btn">Get Started</a>
+      </div>
     </div>
   </section>
 
@@ -128,29 +132,27 @@
         </div>
       </div>
       <div class="row">
-        <div class="row">
-          <div class="col-md-6 ">
-            <div class="img-box">
-              <img src="images/bulb.png" alt="">
-            </div>
+        <div class="col-md-6 ">
+          <div class="img-box">
+            <img src="images/bulb.png" alt="">
           </div>
-          <div class="col-md-6">
-            <div class="detail-box">
-              <h3>
-                Vem descobrir se a Robótica é o caminho certo para ti!
-              </h3>
-              <p>
-                Sabemos que decidir o futuro nem sempre é fácil. Talvez tenhas curiosidade sobre robótica, 
-                mas ainda não sabes se é a área certa para ti. 
-                Talvez gostes de tecnologia, mas queres ver na prática o que significa trabalhar nesta área. 
-                Ou talvez já saibas que este é o teu caminho e que só precisas de um empurrão.
-                Seja qual for a tua situação, este curso vai dar-te clareza e confiança para o futuro. 
-              </p>
-              <p>Vais trabalhar com mentores experientes, ter contacto com tecnologias usadas na indústria 
-                e perceber como estas competências podem abrir portas no mundo académico e profissional, 
-                mas acima de tudo garantimos-te que te vais divertir!
-              </p>
-            </div>
+        </div>
+        <div class="col-md-6">
+          <div class="detail-box">
+            <h3>
+              Vem descobrir se a Robótica é o caminho certo para ti!
+            </h3>
+            <p>
+              Sabemos que decidir o futuro nem sempre é fácil. Talvez tenhas curiosidade sobre robótica, 
+              mas ainda não sabes se é a área certa para ti. 
+              Talvez gostes de tecnologia, mas queres ver na prática o que significa trabalhar nesta área. 
+              Ou talvez já saibas que este é o teu caminho e que só precisas de um empurrão.
+              Seja qual for a tua situação, este curso vai dar-te clareza e confiança para o futuro. 
+            </p>
+            <p>Vais trabalhar com mentores experientes, ter contacto com tecnologias usadas na indústria 
+              e perceber como estas competências podem abrir portas no mundo académico e profissional, 
+              mas acima de tudo garantimos-te que te vais divertir!
+            </p>
           </div>
         </div>
       </div>
@@ -168,7 +170,7 @@
           </h2>
         </div>
         <div class="row">
-          <div class="col-md-3 ">
+          <div class="col-lg-3 ">
             <div class="box ">
               <div class="img-box">
                 <img src="images/robotic-arm.png" alt="">
@@ -183,7 +185,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3 ">
+          <div class="col-lg-3 ">
             <div class="box ">
               <div class="img-box">
                 <img src="images/ai (1).png" alt="">
@@ -198,7 +200,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3 ">
+          <div class="col-lg-3 ">
             <div class="box ">
               <div class="img-box">
                 <img src="images/circuit-board.png" alt="">
@@ -213,7 +215,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3 ">
+          <div class="col-lg-3 ">
             <div class="box ">
               <div class="img-box">
                 <img src="images/3d-printer.png" alt="">
@@ -235,40 +237,46 @@
   
   <!-- planing section -->
   
-  <section class="planing-section" id="planing_section">
-    <h2>
-      <span>Programa</span> semanal
-    </h2>
-    <table>
-      <tr class="horario-header">
-        <th>Horário</th>
-        <th>Segunda</th>
-        <th>Terça</th>
-        <th>Quarta</th>
-        <th>Quinta</th>
-        <th>Sexta</th>
-      </tr>
-      <tr>
-        <td class="horario">10h - 13h</td>
-        <td class="nao-almoco-row">Receção e Apresentação</td>
-        <td class="nao-almoco-row">Desafio Soldadura</td>
-        <td class="nao-almoco-row">Intro Rob. II</td>
-        <td class="nao-almoco-row">WKS. Micro Comp. Central</td>
-        <td class="nao-almoco-row">WKS. AI/ML</td>
-      </tr>
-      <tr class="almoco-row">
-        <td class="almoco">13h - 14h</td>
-          <td colspan="5">Almoço</td>
-      </tr>
-      <tr>
-        <td class="horario">14h - 17h</td>
-        <td class="nao-almoco-row">Intro Rob. I</td>
-        <td class="nao-almoco-row">WKS. Imp. 3D</td>
-        <td class="nao-almoco-row">Desafio Como Linha</td>
-        <td class="nao-almoco-row">WKS. Sist. Manuf. e DTs</td>
-        <td class="nao-almoco-row">Desafio AI Aplicada à Rob.</td>
-      </tr>
-    </table>
+  <section class="planing-section layout_padding-bottom" id="planing_section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 overflow-auto">
+          <h2>
+            <span>Programa</span> semanal
+          </h2>
+          <table>
+            <tr class="horario-header">
+              <th>Horário</th>
+              <th>Segunda</th>
+              <th>Terça</th>
+              <th>Quarta</th>
+              <th>Quinta</th>
+              <th>Sexta</th>
+            </tr>
+            <tr>
+              <td class="horario">10h - 13h</td>
+              <td class="nao-almoco-row">Receção e Apresentação</td>
+              <td class="nao-almoco-row">Desafio Soldadura</td>
+              <td class="nao-almoco-row">Intro Rob. II</td>
+              <td class="nao-almoco-row">WKS. Micro Comp. Central</td>
+              <td class="nao-almoco-row">WKS. AI/ML</td>
+            </tr>
+            <tr class="almoco-row">
+              <td class="almoco">13h - 14h</td>
+                <td colspan="5">Almoço</td>
+            </tr>
+            <tr>
+              <td class="horario">14h - 17h</td>
+              <td class="nao-almoco-row">Intro Rob. I</td>
+              <td class="nao-almoco-row">WKS. Imp. 3D</td>
+              <td class="nao-almoco-row">Desafio Como Linha</td>
+              <td class="nao-almoco-row">WKS. Sist. Manuf. e DTs</td>
+              <td class="nao-almoco-row">Desafio AI Aplicada à Rob.</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- application section -->
@@ -343,7 +351,73 @@
               <h2>Os Nossos Parceiros</h2>
             </div>
             <div class="sponsors_section_content">
-              <div class="row">
+              <div class="sponsors_section_content_top">
+                <div class="sponsors_section_single">
+                  <a href="" target="_blank">
+                    <img src="images/NOVA RICS OPEN LAB.png" alt="Brand Logo">
+                  </a>
+                </div>
+                <div class="sponsors_section_single">
+                  <a href="http://rics.uninova.pt" target="_blank">
+                    <img src="images/logos/rics logo.png" alt="Brand Logo">
+                  </a>
+                </div>
+                <div class="sponsors_section_single">
+                  <a href="http://uninova.pt" target="_blank">
+                    <img src="images/logos/logotipo uninova.png" alt="Brand Logo">
+                  </a>
+                </div>
+                <div class="sponsors_section_single">
+                  <a href="https://cts.uninova.pt/" target="_blank">
+                    <img src="images/logos/logotipo cts.png" alt="Brand Logo">
+                  </a>
+                </div>
+                <div class="sponsors_section_single">
+                  <a href="https://www.fct.unl.pt/ target="_blank"">
+                    <img src="images/logos/logotipo nova school.png" alt="Brand Logo">
+                  </a>
+                </div>
+                <div class="sponsors_section_single">
+                  <a href="https://www.unl.pt/" target="_blank">
+                    <img src="images/logos/logo universidade nova.png" alt="Brand Logo">
+                  </a>
+                </div>
+              </div>
+
+              <div class="sponsors_section_content_bottom">
+                <div class="sponsors_section_single">
+                  <a href="http://cedri.ipb.pt" target="_blank">
+                    <img src="images/logos/logotipo mauser.png" alt="Brand Logo">
+                  </a>
+                </div>
+                <div class="sponsors_section_single">
+                  <a href="http://ipb.pt" target="_blank">
+                    <img src="images/logos/logotipo neec.png" alt="Brand Logo">
+                  </a>
+                </div>
+                <div class="sponsors_section_single">
+                  <a href="http://liu.se/" target="_blank">
+                    <img src="assets/images/sponsors/liu_logo.png" alt="Brand Logo">
+                  </a>
+                </div>
+                <div class="sponsors_section_single">
+                  <a href="http://ait.ac.at" target="_blank">
+                    <img src="assets/images/sponsors/ait_logo.png" alt="Brand Logo">
+                  </a>
+                </div>
+                <div class="sponsors_section_single">
+                  <a href="https://www.tum.de/en/" target="_blank">
+                    <img src="assets/images/sponsors/tum.png" alt="Brand Logo">
+                  </a>
+                </div>
+                <div class="sponsors_section_single">
+                  <a href="https://www.hs-emden-leer.de/en/" target="_blank">
+                    <img src="assets/images/sponsors/emden.png" alt="Brand Logo">
+                  </a>
+                </div>
+              </div>
+
+              <!--<div class="row">
                 <div class="col-md-2 col-sm-4 col-xs-4">
                   <div class="sponsors_section_single">
                     <a href="">
@@ -386,10 +460,10 @@
                     </a>
                   </div>
                 </div>	
-              </div>
+              </div>-->
 
 
-              <div class="row">
+              <!--<div class="row">
                 <div class="col-md-2 col-sm-4 col-xs-4">
                   <div class="sponsors_section_single">
                     <a href="http://cedri.ipb.pt">
@@ -432,8 +506,7 @@
                     </a>
                   </div>
                 </div>
-              </div>
-
+              </div>-->
             </div>
           </div>
         </div>

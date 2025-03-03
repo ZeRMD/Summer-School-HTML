@@ -7,9 +7,9 @@ body {
   position: relative;
 }
 
-body::-webkit-scrollbar {
+/* body::-webkit-scrollbar {
   display: none;
-}
+} */
 
 html {
   scroll-behavior: smooth;
@@ -108,7 +108,7 @@ a:focus {
   min-height: 100vh;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  /*justify-content: center;*/
   align-items: center;
   background: linear-gradient(to bottom, #0065BD 0%, #ffffff 100%);
   padding: 100px;
@@ -180,6 +180,12 @@ a:focus {
   color: #ffffff;
 }
 
+.navbar-toggler {
+  &:focus {
+    outline: none;
+  }
+}
+
 .custom_nav-container {
   padding: 0;
 }
@@ -232,10 +238,10 @@ a:focus {
 .topic_section {
   position: relative;
   margin-top: 40px;
-  height: 70vh;
+  /* height: 70vh;
   margin-bottom: -50px;
+  scroll-margin-top: -40px; */
   background-color: #0065BD;
-  scroll-margin-top: -40px;
 }
 
 .topic_section .box {
@@ -361,16 +367,17 @@ a:focus {
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 70vh;
-  margin-bottom: 0px;
+  /* height: 70vh; 
+  margin-bottom: 0px;*/
   background-color: #0065BD;
+  overflow: hidden;
 }
 
 .planing-section h2 {
   position: relative;
   font-weight: bold;
   margin-top: 10px;
-  margin-bottom: -40px;
+  /* margin-bottom: -40px; */
 }
 
 .planing-section h2 span {
@@ -378,10 +385,13 @@ a:focus {
 }
 
 .planing-section table {
-  width: 80%;
+  /* width: 80%; */
+  width: 100%;
   border-collapse: collapse;
   border-radius: 0px;
-  margin: auto;
+  /*margin: auto;*/
+  margin-top: 45px;
+  table-layout: fixed;
 }
 
 .planing-section .horario-header {
@@ -391,6 +401,7 @@ a:focus {
 .planing-section .horario-header th {
   background-color: #ffcc00;
   color: #0065BD;
+  width: 180px;
 }
 
 .planing-section th, td {
@@ -751,8 +762,8 @@ a:focus {
 .team-section {
   padding: 50px 20px;
   background-color: #ffffff;
-  display: inline;
-  float: left;
+  /*display: inline;
+  float: left;*/
   width: 100%;
   scroll-margin-top: -40px;
 }
@@ -821,8 +832,8 @@ a:focus {
   text-align: justify;
   box-sizing: border-box;
   background-color: #ffffff;
-  display: inline;
-  float: left;
+  /*display: inline;
+  float: left;*/
   width: 100%;
 }
 
@@ -846,6 +857,20 @@ a:focus {
   float: left;
   margin-top: 50px;
   width: 100%;
+}
+
+.sponsors_section_content_top,
+.sponsors_section_content_bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.sponsors_section_content_top .sponsors_section_single img,
+.sponsors_section_content_bottom .sponsors_section_single img {
+  max-width: 170px;
 }
 
 .sponsors_section .sponsors_section_area .sponsors_section_content .row{
