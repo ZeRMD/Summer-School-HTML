@@ -112,6 +112,7 @@ a:focus {
   align-items: center;
   background: linear-gradient(to bottom, #0065BD 0%, #ffffff 100%);
   padding: 100px;
+  gap: 32px;
 }
 
 .hero_area .img-box {
@@ -120,6 +121,7 @@ a:focus {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 50%;
 }
 
 .hero_area .img-box img {
@@ -158,6 +160,25 @@ a:focus {
   border-radius: 5px;
   display: block;
   margin: 0 auto 0;
+}
+
+.hero_area .slider {
+  width: 50%;
+}
+
+.owl-nav {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.owl-nav button {
+  font-size: 40px !important;
+  width: 40px;
+  color: #fff !important;
 }
 
 .header_section {

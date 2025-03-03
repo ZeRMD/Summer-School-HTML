@@ -49,8 +49,23 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         }
     }
+
+    function initSlider() {
+        const slider = document.querySelector('[data-js-slider]');
+        $(slider).owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            responsive: {
+                0: {
+                    items:1
+                },
+            }
+        })
+    }
     
     window.addEventListener("scroll", changeActiveNav);
     changeActiveNav(); // Run on load
     closeMenuOnItemClick();
+    initSlider();
 });
