@@ -166,6 +166,12 @@ a:focus {
   width: 50%;
 }
 
+.hero_area .slider .owl-carousel .item img{
+  width: 800;
+  height: 500;
+  object-fit: cover;
+}
+
 .owl-nav {
   position: absolute;
   width: 100%;
@@ -370,7 +376,7 @@ a:focus {
 }
 
 .topic_section .detail-box p {
-  text-align: justify;
+  text-align: center;
   flex-grow: 1; /* Pushes the "Read More" button to the bottom */
 }
 
@@ -600,20 +606,12 @@ a:focus {
   max-width: 100%;
 }
 
-.goal_section .detail-box {
-  margin-top: 40px;
-}
-
-.goal_section .detail-box h3 {
+.goal_section h3 {
   font-weight: bold;
   text-align: center;
+  margin-top: 95px;
   margin-bottom: 40px;
   color: #FADA08;
-}
-
-.goal_section .detail-box p {
-  margin-top: 15px;
-  text-align: justify;
 }
 
 /* *************************************************** */
@@ -758,7 +756,10 @@ a:focus {
   background-color: #007fa4;
 }
 
-/* footer section*/
+/* *************************************************** */
+/* Footer Section */
+/* *************************************************** */
+
 .footer_section {
   position: relative;
   background-color: #ffffff;
@@ -773,6 +774,7 @@ a:focus {
 
 .footer_section p a {
   color: inherit;
+  font-weight: bold;
 }
 /*# sourceMappingURL=style.css.map */
 
@@ -802,15 +804,13 @@ a:focus {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 8rem;
 }
 
 .team-section .team-member {
   width: 200px;
   text-align: center;
   padding: 20px 0 20px 0;
-  margin-left: 60px;
-  margin-right: 60px;
 }
 
 @keyframes borderAnimation {
@@ -843,6 +843,11 @@ a:focus {
   color: blue;
   text-decoration: none;
   font-weight: bold;
+  font-size: 20px; /* Makes icons more visible */
+}
+
+.team-section .team-member a:hover {
+  color: #00bbf0;
 }
 
 /* *************************************************** */
@@ -866,7 +871,6 @@ a:focus {
 
 .sponsors_section .sponsors_section_area .sponsors_section_title {
   text-align: center;
-
 }
 
 .sponsors_section .sponsors_section_area .sponsors_section_title h2 {
