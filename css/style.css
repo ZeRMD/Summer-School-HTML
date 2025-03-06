@@ -197,6 +197,38 @@ a:focus {
   padding-left: 25px;
 }
 
+.btn-container {
+  display: inline-flex; 
+  gap: 50px; 
+  margin-top: 15px;
+  justify-content: center;
+
+  .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    width: auto;
+    margin: 0;
+  }
+}
+
+.btn:hover {
+  background-color: #ffe96a;
+}
+
+.btn i {
+  font-size: 18px; /* Adjust icon size */
+}
+
+.btn-home-spacing {
+  gap: 5px;
+}
+
+
 /* *************************************************** */
 /* Header Section */
 /* *************************************************** */
@@ -754,6 +786,29 @@ a:focus {
 
 .info_section form button:hover {
   background-color: #007fa4;
+}
+
+.info_detail a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.info_detail a:hover {
+  color: #00bbf0;
+  text-decoration: underline;
+}
+
+.social-links {
+  display: flex;
+  gap: 10px; /* Space between icons */
+  justify-content: center; /* Centers them horizontally */
+  margin-top: 10px;
+}
+
+.social-links a {
+  color: #333;
+  font-size: 22px;
+  transition: color 0.3s ease;
 }
 
 /* *************************************************** */
