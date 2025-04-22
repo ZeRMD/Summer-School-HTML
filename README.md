@@ -13,5 +13,5 @@ docker build -t summerschool .
 ### 2. Run Container
 
 ```bibtex
-docker run -d --restart unless-stopped -p 8080:80 --name RicsSummerSchool summerschool:tag
+docker run -d --restart always -p 8080:80 --name RicsSummerSchool summerschool:tag
 ```
