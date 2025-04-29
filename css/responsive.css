@@ -78,6 +78,10 @@
   .application_section .application_wrapper .separator {
     display: none;
   }
+
+  .team-section .team-container {
+    gap: 2rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -119,6 +123,15 @@
 
   .goal_section .img-box img {
     max-width: 170px;
+  }
+
+  .team-section .team-container {
+    gap: 1rem;
+    flex-direction: column;
+  }
+
+  .team-section .team-member {
+    margin: 0 auto;
   }
 }
 
