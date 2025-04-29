@@ -18,10 +18,16 @@
 
   .hero_area .img-box {
     width: 100%;
+    max-width: 100%;
   }
 
   .hero_area .img-box img {
     max-width: 200px;
+  }
+
+  .hero_area .btn-container {
+    gap: 14px;
+    flex-wrap: wrap;
   }
 
   .hero_area .slider {
@@ -58,6 +64,19 @@
   .owl-nav {
     padding: 0 10vw;
     left: 0;
+  }
+
+  .application_section {
+    padding-bottom: 24px;
+  }
+
+  .application_section .application_wrapper {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .application_section .application_wrapper .separator {
+    display: none;
   }
 }
 
